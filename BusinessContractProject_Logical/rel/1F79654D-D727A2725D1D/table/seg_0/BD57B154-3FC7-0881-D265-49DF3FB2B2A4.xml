@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD57B154-3FC7-0881-D265-49DF3FB2B2A4" name="CREO_property">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>8CCF579D-D008-6F5C-9ECA-49FC09FDB495</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="property_id" id="63E155D2-6F56-4766-D705-3F0280FCBA74">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>FEC32229-C6B2-338B-5D0B-FADBE067A382</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="building" id="BE8CEF95-7797-CB81-0384-1EE868806034">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>1F6DD6D9-C1CF-9845-86E1-F40BD4557F23</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="space" id="74D98659-739C-94E4-AEAF-3E506F48F857">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>8B598507-E035-D4E8-0FA2-6568202E7DED</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="square_feet" id="9FE364DD-E485-961D-649A-EBF97E760649">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>D09FD49B-C16F-ECBB-89AE-FBEAE78B4884</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acreage" id="CEAD3487-FCBA-EEB6-7C40-FB9039679F16">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>12CE44DE-5CF1-BEC8-05B0-C4673AF86D95</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price_per_sf" id="166DC02A-ADC6-F069-66EE-6BA09D1A63CF">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>C70ACB81-16C5-C7C6-1BE1-D0C8A5E46514</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="annual rent" id="D728E348-6DB5-B204-7449-AAE8965D87BC">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>C1261579-A612-E2E1-0085-7A669507BE99</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2CA16477-372E-4F84-7BF6-ECDFF99998E9" name="CREO_product_id_pk">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>DF645D0A-259B-C36A-913C-542759F0A18F</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63E155D2-6F56-4766-D705-3F0280FCBA74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

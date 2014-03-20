@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C274F5E1-E1A0-A271-39F3-3ACDC6B7FB74" name="CREO_communication">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>7D38D187-C3DD-DDC4-EE19-96E5F689FDF9</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="communication_id" id="4CB5867C-71E0-A181-62B6-EF04CB1F5A32">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>30C7426E-E869-FEA9-26A4-CD39466F7B06</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contact_id" id="EC260EFE-AD6B-EC62-C157-3942CBF7FD35">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>AF8DF8B8-FFE0-8938-08B4-FA6EFE764EA6</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>361636BB-5F17-7350-B923-FD5B6B23BB30</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD315E14-11FB-8F8E-193A-7D35698540EE" referredColumn="361636BB-5F17-7350-B923-FD5B6B23BB30"/>
+</associations>
+</Column>
+<Column name="date" id="E885EE6D-B0AE-A533-242F-BCA061740718">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>12EB6913-B27A-23D1-BBC0-7BEBA198C339</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="notes" id="6CD137EC-B867-9F29-66D2-0A11C08C754D">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>DBD439A4-0AC0-9BC7-784C-F7FB414E9B71</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF520BBB-9B12-5061-703E-EE24DB3259C5" name="CREO_communication PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>403ACAF1-F519-171D-852C-497A3D275406</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CB5867C-71E0-A181-62B6-EF04CB1F5A32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38F405A6-C015-314A-B431-AC244E4891EA" name="CREO_Relation_10">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>92A2E1E9-4B60-826B-006E-0DF4356960EF</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC260EFE-AD6B-EC62-C157-3942CBF7FD35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

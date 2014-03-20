@@ -1,0 +1,210 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DECD4134-2715-1739-C9EC-E33649A94664" name="CREO_lease">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>74F3E62D-7FE7-7265-D534-1F3A01F99382</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lease_id" id="32DEA823-A931-CFAA-528B-8B375EEF6F5F">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>1C5625CD-52B6-F9CD-62F5-6E8D830398B1</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="11985941-C1A8-B632-3801-70BE16589A20">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>A4235036-E84F-9F53-FA44-1CCB033E0439</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<defaultValue>UT as Tenant</defaultValue>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<listOfValues>
+<valueDef value="ATM" description=""/>
+<valueDef value="Tower" description=""/>
+<valueDef value="UT as Landlord" description=""/>
+<valueDef value="UT as Tenant" description=""/>
+</listOfValues>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="5BAC9108-8321-866E-D625-0CFA29F2D21C">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>9DBF7C2D-77C7-B6D8-BF0A-5B0C6D5301D8</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="use" id="3747562F-23B6-67EA-DD3C-864B70E3BCD4">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>76DBD31F-E2ED-8F60-808F-6823A50445E2</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rent_frequency" id="500B1884-6E21-2FD8-4A64-9C5065AF4001">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>CEE881A6-EB39-BAF3-DDF6-251A59EE49A6</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monthly_income" id="FEF4D228-4991-CDC0-F4FF-ED5E773E040D">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>20576C81-03D9-5934-4446-9180268173CD</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="annual_income" id="0517F783-9B96-BC03-7EB5-D94CE8B8C485">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>65FE8965-577D-5AE8-E6D1-18B537DA8200</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_rent" id="D18F3265-4F7E-30F0-C65D-9B91770E4E55">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>A5ED0E94-4E9D-9AFC-9A7A-EEAF7E9821B5</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="renewal_options_number" id="02382F9A-D482-42BF-CCC5-AFD0AFBDD859">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>B9916157-2A78-DDB8-6FFA-1F899E3F21E4</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="renewal_options_term" id="6AE7CD81-E6D2-DE83-8C89-50A5777CD04C">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>1CBFEA06-378D-E4D8-D491-5F9E37F43BA1</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="po_number" id="2EA78FAE-8AE7-FF9D-771A-A3C000510B97">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>BCDD10BA-F7F8-4DD9-932B-14DC93F0CBEE</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="landlord_id" id="AB1F4BA3-7AFF-ECC2-0DC8-32575F1DCA3C">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>E28BEE59-7446-323C-E919-4442A9A2045A</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>361636BB-5F17-7350-B923-FD5B6B23BB30</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2A33375-7828-8468-A1BF-360BF3A4721A" referredColumn="361636BB-5F17-7350-B923-FD5B6B23BB30"/>
+</associations>
+</Column>
+<Column name="tenant_id" id="F3D48C41-EA07-E51E-0340-8FD5180AC290">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>744EFF46-E7A9-A9F8-42D6-84F09907C7C1</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>361636BB-5F17-7350-B923-FD5B6B23BB30</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DBB8710-1FE3-960A-FB4C-E31DDFB6500D" referredColumn="361636BB-5F17-7350-B923-FD5B6B23BB30"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0EB72ADB-5E17-AF27-BB2D-0269E36368D3" name="CREO_ord_id_pk">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>7CB0B825-8665-1873-47F9-0F20DA34F089</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32DEA823-A931-CFAA-528B-8B375EEF6F5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B8D0DA1-A90A-6B47-7B7C-E453DBE6FEFF" name="CREO_Relation_41">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>B13C7F32-5A0A-B182-6FDC-06BF49219AD9</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB1F4BA3-7AFF-ECC2-0DC8-32575F1DCA3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5E2FBB8-960F-1052-C57F-056511F32668" name="CREO_Relation_53">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-06-13 15:40:55 UTC</createdTime>
+<generatorID>74F026CB-0112-DD4C-AC01-FCB3E4DAAD6D</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3D48C41-EA07-E51E-0340-8FD5180AC290"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
