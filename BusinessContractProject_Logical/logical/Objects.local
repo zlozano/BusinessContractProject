@@ -1,29 +1,24 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
-   <object objectType="Entity" objectID="72EDC564-3D98-C515-B63B-4F4C611E7C5B" name="CREO_Escalation" seqName="seg_0"/>
-   <object objectType="Entity" objectID="7D38D187-C3DD-DDC4-EE19-96E5F689FDF9" name="CREO_communication" seqName="seg_0"/>
-   <object objectType="Entity" objectID="7BF54E1E-FF6C-7531-CADA-EBF897E7B5E9" name="CREO_contact" seqName="seg_0"/>
-   <object objectType="Entity" objectID="C3C2A92C-9CF0-FFA5-3585-83CC3C04D0E3" name="CREO_cost" seqName="seg_0"/>
-   <object objectType="Entity" objectID="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="CREO_document" seqName="seg_0"/>
-   <object objectType="Entity" objectID="55BC182B-23D8-52CC-F9E9-952D997B424A" name="CREO_issue" seqName="seg_0"/>
-   <object objectType="Entity" objectID="968FEE5E-973A-4573-1F2E-3A8679F3AB5D" name="CREO_item_esc" seqName="seg_0"/>
-   <object objectType="Entity" objectID="74F3E62D-7FE7-7265-D534-1F3A01F99382" name="CREO_lease" seqName="seg_0"/>
-   <object objectType="Entity" objectID="CD141027-DEA0-C726-D52F-B6502B143350" name="CREO_lease_item" seqName="seg_0"/>
-   <object objectType="Entity" objectID="E89885FF-188B-6AF3-F9D6-5FB9AE18C376" name="CREO_link" seqName="seg_0"/>
-   <object objectType="Entity" objectID="C7C8AC74-A45C-EA3F-9C0C-987ED9C0A734" name="CREO_payment" seqName="seg_0"/>
-   <object objectType="Entity" objectID="8CCF579D-D008-6F5C-9ECA-49FC09FDB495" name="CREO_property" seqName="seg_0"/>
+   <object objectType="Entity" objectID="72EDC564-3D98-C515-B63B-4F4C611E7C5B" name="BCDB_Escalation" seqName="seg_0"/>
+   <object objectType="Entity" objectID="CD141027-DEA0-C726-D52F-B6502B143350" name="BCDB_ammendment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7D38D187-C3DD-DDC4-EE19-96E5F689FDF9" name="BCDB_communication" seqName="seg_0"/>
+   <object objectType="Entity" objectID="74F3E62D-7FE7-7265-D534-1F3A01F99382" name="BCDB_contract" seqName="seg_0"/>
+   <object objectType="Entity" objectID="C3C2A92C-9CF0-FFA5-3585-83CC3C04D0E3" name="BCDB_cost" seqName="seg_0"/>
+   <object objectType="Entity" objectID="49D458E3-ECB4-C895-27DF-1DD7AF7B236D" name="BCDB_department" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="BCDB_document" seqName="seg_0"/>
+   <object objectType="Entity" objectID="968FEE5E-973A-4573-1F2E-3A8679F3AB5D" name="BCDB_item_esc" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E89885FF-188B-6AF3-F9D6-5FB9AE18C376" name="BCDB_link" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7BF54E1E-FF6C-7531-CADA-EBF897E7B5E9" name="BCDB_party" seqName="seg_0"/>
+   <object objectType="Entity" objectID="C7C8AC74-A45C-EA3F-9C0C-987ED9C0A734" name="BCDB_payment" seqName="seg_0"/>
+   <object objectType="Relation" objectID="DD0FDA77-8DA1-CD5C-3915-F8B73C79DE61" name="BCDB_Relation_23" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4F0B3E25-F435-C6A3-2622-0929C566276C" name="BCDB_Relation_25" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D955DDFF-F4C3-8EC1-1132-0E30EB838A9C" name="BCDB_Relation_26" seqName="seg_0"/>
    <object objectType="Relation" objectID="92A2E1E9-4B60-826B-006E-0DF4356960EF" name="CREO_Relation_10" seqName="seg_0"/>
-   <object objectType="Relation" objectID="92D1C399-B417-E623-355C-C1FECBC3EA7D" name="CREO_Relation_13" seqName="seg_0"/>
-   <object objectType="Relation" objectID="4FE774F4-7CB4-B929-17D9-B6C20C496310" name="CREO_Relation_18" seqName="seg_0"/>
    <object objectType="Relation" objectID="B13C7F32-5A0A-B182-6FDC-06BF49219AD9" name="CREO_Relation_41" seqName="seg_0"/>
-   <object objectType="Relation" objectID="2691C550-6DE5-E187-59F8-2E828CC5E96D" name="CREO_Relation_42" seqName="seg_0"/>
    <object objectType="Relation" objectID="2870ADB3-1B22-437A-B49D-0DD72FF9A90E" name="CREO_Relation_43" seqName="seg_0"/>
    <object objectType="Relation" objectID="D00A7531-5B14-6B49-EF85-AA057A002B1C" name="CREO_Relation_44" seqName="seg_0"/>
-   <object objectType="Relation" objectID="1B419088-C00C-21DE-EBA5-20E70EBC80F0" name="CREO_Relation_45" seqName="seg_0"/>
    <object objectType="Relation" objectID="4A0F1D9E-B182-8ABB-FF71-075D24B7FAA6" name="CREO_Relation_45v1" seqName="seg_0"/>
-   <object objectType="Relation" objectID="6184566B-A5E2-1EA7-3D50-03C6F8C529D2" name="CREO_Relation_47" seqName="seg_0"/>
-   <object objectType="Relation" objectID="1F56CC4A-94AA-0F36-83B0-A6989A701C43" name="CREO_Relation_48" seqName="seg_0"/>
-   <object objectType="Relation" objectID="83DED617-C8BE-E64A-675C-5BBC93D8147B" name="CREO_Relation_49" seqName="seg_0"/>
    <object objectType="Relation" objectID="226FB709-8DEF-3FC0-E769-C91C6D078702" name="CREO_Relation_50" seqName="seg_0"/>
    <object objectType="Relation" objectID="88CB88E8-E16D-71DF-BDB9-B916CED5DD5B" name="CREO_Relation_51" seqName="seg_0"/>
    <object objectType="Relation" objectID="C2AC296A-41F8-F693-B327-BD4CADAB66D6" name="CREO_Relation_51v1" seqName="seg_0"/>

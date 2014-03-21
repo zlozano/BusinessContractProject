@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="49D458E3-ECB4-C895-27DF-1DD7AF7B236D" name="BCDB_department">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-21 01:38:26 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="department_id" id="6CAC830B-544D-025D-D8EC-91E81EC3F8E8">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-21 01:38:39 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="584EA73E-93FE-C36E-92F9-F839C2A2829D">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-21 01:39:04 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C4BA7705-1F92-19CE-036F-17E7C894890C" name="BCDB_department PK">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-21 01:38:59 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6CAC830B-544D-025D-D8EC-91E81EC3F8E8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

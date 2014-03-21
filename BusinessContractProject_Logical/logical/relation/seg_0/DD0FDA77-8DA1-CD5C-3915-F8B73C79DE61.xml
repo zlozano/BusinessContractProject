@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BCDB_Relation_23" directorySegmentName="seg_0" id="DD0FDA77-8DA1-CD5C-3915-F8B73C79DE61">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-21 01:54:19 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<sourcePk>C4BA7705-1F92-19CE-036F-17E7C894890C</sourcePk>
+<targetPk>6B7A1E7D-39B3-A6BF-00EA-240023EBDE46</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>49D458E3-ECB4-C895-27DF-1DD7AF7B236D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7BF54E1E-FF6C-7531-CADA-EBF897E7B5E9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

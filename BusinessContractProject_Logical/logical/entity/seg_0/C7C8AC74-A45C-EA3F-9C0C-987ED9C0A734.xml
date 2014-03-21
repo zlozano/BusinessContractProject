@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C7C8AC74-A45C-EA3F-9C0C-987ED9C0A734" name="CREO_payment">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C7C8AC74-A45C-EA3F-9C0C-987ED9C0A734" name="BCDB_payment">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-25 00:43:21 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -114,7 +114,7 @@
 <use>1</use>
 <logicalDatatype>69230305-AB6A-99EB-35A1-CC306D543604</logicalDatatype>
 </Attribute>
-<Attribute name="vendor_id" id="B196BE04-28FF-EE00-7F2B-4077089197E3">
+<Attribute name="party_id" id="B196BE04-28FF-EE00-7F2B-4077089197E3">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-19 01:44:00 UTC</createdTime>
 <generatorID>C0137A1F-B1BC-544D-39C2-668F2AA1DD17</generatorID>

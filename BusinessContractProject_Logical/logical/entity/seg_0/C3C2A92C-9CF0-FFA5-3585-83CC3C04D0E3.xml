@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C3C2A92C-9CF0-FFA5-3585-83CC3C04D0E3" name="CREO_cost">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C3C2A92C-9CF0-FFA5-3585-83CC3C04D0E3" name="BCDB_cost">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-25 00:50:14 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -86,20 +86,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Attribute>
-<Attribute name="property_id" id="76B9DE2D-D212-397C-308D-117666AE9ECE">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-03-25 00:50:53 UTC</createdTime>
-<generatorID>92D1C399-B417-E623-355C-C1FECBC3EA7D</generatorID>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>FEC32229-C6B2-338B-5D0B-FADBE067A382</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
 <Attribute name="item_id" id="06B375FF-3B91-22B8-88F6-6E85B6314F45">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-28 01:57:31 UTC</createdTime>
@@ -114,7 +100,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="vendor_id" id="1F328682-5FF0-2765-A7AC-C797A605DCA5">
+<Attribute name="party_id" id="1F328682-5FF0-2765-A7AC-C797A605DCA5">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-11 13:57:46 UTC</createdTime>
 <generatorID>4A0F1D9E-B182-8ABB-FF71-075D24B7FAA6</generatorID>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="CREO_document">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="BCDB_document">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-25 00:47:51 UTC</createdTime>
 <notes>create or replace &lt;br/&gt;TRIGGER  CREO_document&lt;br/&gt;   before insert or update on CREO_document&lt;br/&gt;   for each row&lt;br/&gt;begin&lt;br/&gt;   if :new.document_id is null then&lt;br/&gt;     select CREO_document_seq.nextval() into :new.document_id from dual;&lt;br/&gt;   end if;&lt;br/&gt;   if inserting then&lt;br/&gt;       :new.created := localtimestamp;&lt;br/&gt;       :new.row_version_number := 1;&lt;br/&gt;   elsif updating then&lt;br/&gt;       :new.row_version_number := nvl(:old.row_version_number,1) + 1;&lt;br/&gt;   end if;&lt;br/&gt;   if inserting or updating then&lt;br/&gt;       :new.updated := localtimestamp;&lt;br/&gt;   end if;&lt;br/&gt;end;</notes>
@@ -118,7 +118,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="contact_id" id="DA1E2306-BEA2-D21D-CCFA-2343AE572DB1">
+<Attribute name="party_id" id="DA1E2306-BEA2-D21D-CCFA-2343AE572DB1">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-11 13:52:33 UTC</createdTime>
 <generatorID>2870ADB3-1B22-437A-B49D-0DD72FF9A90E</generatorID>
@@ -128,20 +128,6 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="property_id" id="759882D7-9B3F-BD5B-29AD-00D05C3BF745">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-11 14:06:29 UTC</createdTime>
-<generatorID>1F56CC4A-94AA-0F36-83B0-A6989A701C43</generatorID>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>FEC32229-C6B2-338B-5D0B-FADBE067A382</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

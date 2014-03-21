@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74F3E62D-7FE7-7265-D534-1F3A01F99382" name="CREO_lease">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74F3E62D-7FE7-7265-D534-1F3A01F99382" name="BCDB_contract">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-02-01 17:26:04 UTC</createdTime>
 <generatorID>126C0BEA-5C9B-D65C-EC1C-4FD979CBF339</generatorID>
@@ -160,7 +160,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="landlord_id" id="E28BEE59-7446-323C-E919-4442A9A2045A">
+<Attribute name="party_dept_contact" id="E28BEE59-7446-323C-E919-4442A9A2045A">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-11 13:51:51 UTC</createdTime>
 <generatorID>B13C7F32-5A0A-B182-6FDC-06BF49219AD9</generatorID>
@@ -174,7 +174,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="tenant_id" id="744EFF46-E7A9-A9F8-42D6-84F09907C7C1">
+<Attribute name="party_dept_contract_admin" id="744EFF46-E7A9-A9F8-42D6-84F09907C7C1">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-19 01:26:26 UTC</createdTime>
 <generatorID>74F026CB-0112-DD4C-AC01-FCB3E4DAAD6D</generatorID>
@@ -184,6 +184,34 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="parry_vendor" id="3EA785D2-7D6C-FEF9-C78D-58C564EB2134">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-21 02:13:37 UTC</createdTime>
+<generatorID>D955DDFF-F4C3-8EC1-1132-0E30EB838A9C</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="department_id" id="746F0C77-FD37-0FE3-E4F0-B40A752F4AAE">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-21 01:56:14 UTC</createdTime>
+<generatorID>4F0B3E25-F435-C6A3-2622-0929C566276C</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6CAC830B-544D-025D-D8EC-91E81EC3F8E8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
