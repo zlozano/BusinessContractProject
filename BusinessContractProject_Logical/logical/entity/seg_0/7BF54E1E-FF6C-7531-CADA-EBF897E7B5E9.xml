@@ -26,19 +26,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="friendly_name" id="322B89EB-BEFF-35AF-21B5-84DFE7DD1AD6">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-19 20:00:52 UTC</createdTime>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-</Attribute>
 <Attribute name="type" id="1E7E5F9C-F734-B556-AD5E-2E76F2627901">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-11 13:47:14 UTC</createdTime>
