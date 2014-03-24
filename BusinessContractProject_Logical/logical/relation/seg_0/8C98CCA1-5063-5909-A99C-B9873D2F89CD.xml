@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BCDB_Relation_51" directorySegmentName="seg_0" id="88CB88E8-E16D-71DF-BDB9-B916CED5DD5B">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-07 15:20:50 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BCDB_Relation_20" directorySegmentName="seg_0" id="8C98CCA1-5063-5909-A99C-B9873D2F89CD">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 23:06:22 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
@@ -13,7 +13,7 @@
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>74F3E62D-7FE7-7265-D534-1F3A01F99382</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>BF0DABE8-9665-95E8-9079-56DD8E6ACEF5</targetEntity>
+<targetEntity>3CD66BE5-5C3F-606B-A68E-E47FD95B3A01</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

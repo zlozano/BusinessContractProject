@@ -4,7 +4,7 @@
 <createdTime>2013-04-11 14:14:51 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+<item key="7C831C10-8394-5311-058A-57D1D4EB2489" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2013-04-11 14:15:07 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+<item key="7C831C10-8394-5311-058A-57D1D4EB2489" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,20 +32,20 @@
 <generatorID>226FB709-8DEF-3FC0-E769-C91C6D078702</generatorID>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+<item key="7C831C10-8394-5311-058A-57D1D4EB2489" value="true"/>
 </engineerTo>
 <referedAttribute>768EAA24-5CE1-AF93-241C-7BC05E0FB6D6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="item_id" id="FF7959AF-A0D6-F3B3-61DE-0508E0D3A803">
+<Attribute name="ammendment_id" id="FF7959AF-A0D6-F3B3-61DE-0508E0D3A803">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-11 14:16:32 UTC</createdTime>
 <generatorID>C2AC296A-41F8-F693-B327-BD4CADAB66D6</generatorID>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+<item key="7C831C10-8394-5311-058A-57D1D4EB2489" value="true"/>
 </engineerTo>
 <referedAttribute>7A27E2F3-4CA2-00DD-0CB5-376E171A7A3C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -54,16 +54,19 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="83BF76C3-62DC-4E75-E47F-8432085430FA" name="CREO_item_esc PK">
+<identifier id="83BF76C3-62DC-4E75-E47F-8432085430FA" name="BCDB_item_esc PK">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-11 14:15:25 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+<item key="7C831C10-8394-5311-058A-57D1D4EB2489" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>68ECC25B-66B3-2537-F377-EFFA23A25C09,226FB709-8DEF-3FC0-E769-C91C6D078702,C2AC296A-41F8-F693-B327-BD4CADAB66D6</newElementsIDs>
 <usedAttributes>
 <attributeRef>68ECC25B-66B3-2537-F377-EFFA23A25C09</attributeRef>
+<attributeRef>E3CBE760-2788-5FE0-433B-05CA3CEE310C</attributeRef>
+<attributeRef>FF7959AF-A0D6-F3B3-61DE-0508E0D3A803</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

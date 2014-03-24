@@ -28,19 +28,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="lease_id" id="89B769BB-8B25-776B-5074-94D8C3DCC882">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-02-01 17:38:12 UTC</createdTime>
-<generatorID>A95B1C6E-D8F3-D90F-79FE-63D41B78ABC9</generatorID>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<referedAttribute>1C5625CD-52B6-F9CD-62F5-6E8D830398B1</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
 <Attribute name="description" id="95BEB3D5-439C-395A-AC07-BAD27FFE0804">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-28 01:49:16 UTC</createdTime>
@@ -77,7 +64,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Attribute>
-<Attribute name="rent" id="FB7B86B2-6B6B-AEF8-2594-7A53AA201021">
+<Attribute name="base_cost" id="FB7B86B2-6B6B-AEF8-2594-7A53AA201021">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-26 19:15:12 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -89,9 +76,22 @@
 <use>1</use>
 <logicalDatatype>LOGDT043</logicalDatatype>
 </Attribute>
+<Attribute name="contract_id" id="89B769BB-8B25-776B-5074-94D8C3DCC882">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-02-01 17:38:12 UTC</createdTime>
+<generatorID>A95B1C6E-D8F3-D90F-79FE-63D41B78ABC9</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<referedAttribute>1C5625CD-52B6-F9CD-62F5-6E8D830398B1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="70D2C347-237F-CF32-6550-EEA2DC2D3756" name="CREO_item_ordid_itemid_pk">
+<identifier id="70D2C347-237F-CF32-6550-EEA2DC2D3756" name="BCDB_item_ordid_itemid_pk">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-02-01 17:26:04 UTC</createdTime>
 <generatorID>B4A31534-4B60-8A3B-4142-3F79DC7A035F</generatorID>
@@ -100,6 +100,7 @@
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>7A27E2F3-4CA2-00DD-0CB5-376E171A7A3C</newElementsIDs>
 <usedAttributes>
 <attributeRef>7A27E2F3-4CA2-00DD-0CB5-376E171A7A3C</attributeRef>
 </usedAttributes>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="49D458E3-ECB4-C895-27DF-1DD7AF7B236D" name="BCDB_department">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="49D458E3-ECB4-C895-27DF-1DD7AF7B236D" name="BCDB_organization">
 <createdBy>crosscountry11</createdBy>
 <createdTime>2014-03-21 01:38:26 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="department_id" id="6CAC830B-544D-025D-D8EC-91E81EC3F8E8">
+<Attribute name="organization_id" id="6CAC830B-544D-025D-D8EC-91E81EC3F8E8">
 <createdBy>crosscountry11</createdBy>
 <createdTime>2014-03-21 01:38:39 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -33,10 +33,35 @@
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+</Attribute>
+<Attribute name="friendly_name" id="AC1A8889-1988-A3B9-4980-9851B48A23C7">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 21:05:58 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
+</Attribute>
+<Attribute name="type" id="D63CDFBE-89CD-FBED-691C-EDED41B8EC0A">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 22:51:06 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

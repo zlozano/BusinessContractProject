@@ -26,54 +26,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="type" id="1E7E5F9C-F734-B556-AD5E-2E76F2627901">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-11 13:47:14 UTC</createdTime>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<defaultValue>UT as Tenant</defaultValue>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<listOfValues>
-<valueDef value="Contact" description=""/>
-<valueDef value="External Customer" description=""/>
-<valueDef value="UT as Landlord" description=""/>
-<valueDef value="UT as Tenant" description=""/>
-<valueDef value="Vendor" description=""/>
-<valueDef value="Vendor Landlord" description=""/>
-</listOfValues>
-</Attribute>
-<Attribute name="vid" id="60A1CDD7-A657-7A73-7776-DC763E6E5668">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-08 16:40:16 UTC</createdTime>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-</Attribute>
-<Attribute name="account_number" id="59D01FF8-FE8E-49FD-7172-67F05F778D8D">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-08 16:44:59 UTC</createdTime>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-</Attribute>
 <Attribute name="primary_contact_name" id="E7AC2458-1C5D-22D3-427F-09D7AA1B41E4">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-11 13:46:36 UTC</createdTime>
@@ -87,20 +39,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="vendor_name" id="4EBBAA7D-E083-B32B-4709-CB7264AAA653">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-11 13:46:58 UTC</createdTime>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-</Attribute>
-<Attribute name="name" id="489E64CE-8A26-3B97-39CD-840B6775AF10">
+<Attribute name="party_name" id="489E64CE-8A26-3B97-39CD-840B6775AF10">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-24 21:46:57 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -244,7 +183,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="department_id" id="E00FE65E-6BAD-682E-0447-D47BFF95AF66">
+<Attribute name="organization_id" id="E00FE65E-6BAD-682E-0447-D47BFF95AF66">
 <createdBy>crosscountry11</createdBy>
 <createdTime>2014-03-21 01:54:19 UTC</createdTime>
 <generatorID>DD0FDA77-8DA1-CD5C-3915-F8B73C79DE61</generatorID>
@@ -260,7 +199,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="6B7A1E7D-39B3-A6BF-00EA-240023EBDE46" name="CREO_contact PK">
+<identifier id="6B7A1E7D-39B3-A6BF-00EA-240023EBDE46" name="BCDB_contact PK">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-24 21:46:53 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -268,6 +207,7 @@
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</newElementsIDs>
 <usedAttributes>
 <attributeRef>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</attributeRef>
 </usedAttributes>

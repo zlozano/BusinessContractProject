@@ -86,7 +86,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Attribute>
-<Attribute name="item_id" id="06B375FF-3B91-22B8-88F6-6E85B6314F45">
+<Attribute name="ammendment_id" id="06B375FF-3B91-22B8-88F6-6E85B6314F45">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-28 01:57:31 UTC</createdTime>
 <generatorID>E0BA189A-B57A-1CBF-3491-ED8557C85D23</generatorID>
@@ -114,9 +114,23 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
+<Attribute name="contract_id" id="94A2C908-4808-809A-46A0-3F546CA64BB8">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 21:38:26 UTC</createdTime>
+<generatorID>BD64DBCE-C39B-0B41-1E17-F5D2B8A1ECE7</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1C5625CD-52B6-F9CD-62F5-6E8D830398B1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="5FC07838-9A64-3D71-B209-499C2546AE93" name="CREO_cost PK">
+<identifier id="5FC07838-9A64-3D71-B209-499C2546AE93" name="BCDB_cost PK">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-25 00:50:33 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -124,6 +138,7 @@
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>D9B81625-B3D3-21E0-92C1-1FA743E451C6</newElementsIDs>
 <usedAttributes>
 <attributeRef>D9B81625-B3D3-21E0-92C1-1FA743E451C6</attributeRef>
 </usedAttributes>

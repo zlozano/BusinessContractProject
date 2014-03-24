@@ -66,7 +66,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="403ACAF1-F519-171D-852C-497A3D275406" name="CREO_communication PK">
+<identifier id="403ACAF1-F519-171D-852C-497A3D275406" name="BCDB_communication PK">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-24 02:34:56 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -74,8 +74,10 @@
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>30C7426E-E869-FEA9-26A4-CD39466F7B06,92A2E1E9-4B60-826B-006E-0DF4356960EF</newElementsIDs>
 <usedAttributes>
 <attributeRef>30C7426E-E869-FEA9-26A4-CD39466F7B06</attributeRef>
+<attributeRef>AF8DF8B8-FFE0-8938-08B4-FA6EFE764EA6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

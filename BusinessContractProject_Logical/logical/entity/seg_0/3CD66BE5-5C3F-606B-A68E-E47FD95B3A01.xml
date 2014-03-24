@@ -1,8 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF0DABE8-9665-95E8-9079-56DD8E6ACEF5" name="BCDB_document">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-03-25 00:47:51 UTC</createdTime>
-<notes>create or replace &lt;br/&gt;TRIGGER  CREO_document&lt;br/&gt;   before insert or update on CREO_document&lt;br/&gt;   for each row&lt;br/&gt;begin&lt;br/&gt;   if :new.document_id is null then&lt;br/&gt;     select CREO_document_seq.nextval() into :new.document_id from dual;&lt;br/&gt;   end if;&lt;br/&gt;   if inserting then&lt;br/&gt;       :new.created := localtimestamp;&lt;br/&gt;       :new.row_version_number := 1;&lt;br/&gt;   elsif updating then&lt;br/&gt;       :new.row_version_number := nvl(:old.row_version_number,1) + 1;&lt;br/&gt;   end if;&lt;br/&gt;   if inserting or updating then&lt;br/&gt;       :new.updated := localtimestamp;&lt;br/&gt;   end if;&lt;br/&gt;end;</notes>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3CD66BE5-5C3F-606B-A68E-E47FD95B3A01" name="BCDB_facility">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 22:59:11 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
@@ -16,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="A452D608-B1DE-C1AD-336E-931B6BC1F414">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-03-25 00:48:04 UTC</createdTime>
+<Attribute name="facility_id" id="685849F2-4AC5-7034-DAEA-1F6D415F7E35">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 22:59:35 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
@@ -27,9 +26,21 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="filename" id="423A3CF6-9D30-FB37-1E1F-0E658DFBA8DB">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-07 15:59:05 UTC</createdTime>
+<Attribute name="building" id="2B4BF0C0-F56F-6E56-7FF4-29C4DDE18412">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 22:59:50 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+</Attribute>
+<Attribute name="address" id="F14445B3-6AE9-B31B-2426-8BCB8F4AE234">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 23:01:18 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
@@ -38,11 +49,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000 BYTE</dataTypeSize>
+<dataTypeSize>100</dataTypeSize>
 </Attribute>
-<Attribute name="file_mimetype" id="57242194-6B83-91D1-950B-F27BBBFBAB8D">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-07 15:59:30 UTC</createdTime>
+<Attribute name="city" id="7293545E-BDAD-7693-50D9-B02B9BB498A0">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 23:01:38 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
@@ -51,11 +62,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>512</dataTypeSize>
+<dataTypeSize>50</dataTypeSize>
 </Attribute>
-<Attribute name="file_charset" id="D2EC6BC1-0860-0A73-C3EE-8C2AED5215FA">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-07 15:59:56 UTC</createdTime>
+<Attribute name="state" id="B8426B77-F39B-12B8-DC0A-59E20305A07D">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 23:02:11 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
@@ -64,23 +75,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>512</dataTypeSize>
+<dataTypeSize>50</dataTypeSize>
 </Attribute>
-<Attribute name="file_blob" id="D037C6B5-2642-2416-AB9F-ADC4ED6D4387">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-07 16:00:18 UTC</createdTime>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT029</logicalDatatype>
-</Attribute>
-<Attribute name="file_comments" id="BD719854-6A07-1314-B978-1F98930E5B7E">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-07 16:00:33 UTC</createdTime>
+<Attribute name="zip_code" id="E05103E3-C570-D743-A945-72D63177A513">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 23:02:29 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
@@ -89,11 +88,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000</dataTypeSize>
+<dataTypeSize>25</dataTypeSize>
 </Attribute>
-<Attribute name="tags" id="EABE34F5-2BED-5509-79E6-0C7624C19D6F">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-14 00:38:53 UTC</createdTime>
+<Attribute name="building_manager" id="C1791002-A398-7B32-C4F4-C18EE97ADBA5">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 23:03:56 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
@@ -102,12 +101,25 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000</dataTypeSize>
+<dataTypeSize>100</dataTypeSize>
 </Attribute>
-<Attribute name="contract_id" id="627A5D63-19D7-9559-ACBB-4CD22CA568CB">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-07 15:20:50 UTC</createdTime>
-<generatorID>88CB88E8-E16D-71DF-BDB9-B916CED5DD5B</generatorID>
+<Attribute name="phone" id="5CA70ED2-D7D3-1FE3-3097-CE0F06F417BB">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 23:04:47 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+</Attribute>
+<Attribute name="contract_id" id="F4F33FCA-8752-6F03-8276-136A1F6AAB5F">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 23:06:22 UTC</createdTime>
+<generatorID>8C98CCA1-5063-5909-A99C-B9873D2F89CD</generatorID>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
@@ -118,33 +130,32 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="party_id" id="DA1E2306-BEA2-D21D-CCFA-2343AE572DB1">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-11 13:52:33 UTC</createdTime>
-<generatorID>2870ADB3-1B22-437A-B49D-0DD72FF9A90E</generatorID>
+<Attribute name="item_id" id="7A6F36C3-1AD8-E6D5-83EB-94DD562B8061">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 23:06:59 UTC</createdTime>
+<generatorID>781A583D-692E-9A64-9691-8A33042D7847</generatorID>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>2F20A6BF-A4F0-8208-8F9C-02F72B6DD899</referedAttribute>
+<referedAttribute>7A27E2F3-4CA2-00DD-0CB5-376E171A7A3C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="E388ACAD-04E9-DC23-917B-3BDADEE82845" name="BCDB_document PK">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-03-25 00:48:19 UTC</createdTime>
+<identifier id="D0DF6EC3-2F79-FC30-30DF-D0B35353D21C" name="BCDB_facility PK">
+<createdBy>crosscountry11</createdBy>
+<createdTime>2014-03-24 22:59:46 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
 <engineerTo>
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<newElementsIDs>A452D608-B1DE-C1AD-336E-931B6BC1F414</newElementsIDs>
 <usedAttributes>
-<attributeRef>A452D608-B1DE-C1AD-336E-931B6BC1F414</attributeRef>
+<attributeRef>685849F2-4AC5-7034-DAEA-1F6D415F7E35</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -26,33 +26,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="item_id" id="99CB0856-9DD3-AE39-93BB-A644949D9FF6">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-03-25 00:45:10 UTC</createdTime>
-<generatorID>FB122C33-59BD-2595-3E9B-E6FDAA067DB5</generatorID>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>7A27E2F3-4CA2-00DD-0CB5-376E171A7A3C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="payment_number" id="61AFFC4D-AA49-9B62-0312-8BE53C8F8AE1">
-<createdBy>pcannata</createdBy>
-<createdTime>2013-04-19 01:37:03 UTC</createdTime>
-<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
-<engineerTo>
-<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-</Attribute>
 <Attribute name="amount" id="68ADC7A4-95B3-77E0-3C2C-65621CA18511">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-26 19:20:49 UTC</createdTime>
@@ -90,7 +63,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Attribute>
-<Attribute name="payment_data" id="288A685C-119D-49E4-0A01-8CE5F883D075">
+<Attribute name="payment_date" id="288A685C-119D-49E4-0A01-8CE5F883D075">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-04-19 01:37:45 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -101,6 +74,19 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="payment_number" id="61AFFC4D-AA49-9B62-0312-8BE53C8F8AE1">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-04-19 01:37:03 UTC</createdTime>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
 </Attribute>
 <Attribute name="total_payments" id="2554F8AA-211A-2B33-54CF-835E7320AFFC">
 <createdBy>pcannata</createdBy>
@@ -113,6 +99,20 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>69230305-AB6A-99EB-35A1-CC306D543604</logicalDatatype>
+</Attribute>
+<Attribute name="ammendment_id" id="99CB0856-9DD3-AE39-93BB-A644949D9FF6">
+<createdBy>pcannata</createdBy>
+<createdTime>2013-03-25 00:45:10 UTC</createdTime>
+<generatorID>FB122C33-59BD-2595-3E9B-E6FDAA067DB5</generatorID>
+<ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
+<engineerTo>
+<item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7A27E2F3-4CA2-00DD-0CB5-376E171A7A3C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 <Attribute name="party_id" id="B196BE04-28FF-EE00-7F2B-4077089197E3">
 <createdBy>pcannata</createdBy>
@@ -130,7 +130,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="BAEBB5CD-E50E-8F51-9DA3-EA4F84CE2BBB" name="CREO_payment PK">
+<identifier id="BAEBB5CD-E50E-8F51-9DA3-EA4F84CE2BBB" name="BCDB_payment PK">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-25 00:43:48 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
@@ -138,6 +138,7 @@
 <item key="1F79654D-6E6C-7DEF-41AF-D727A2725D1D" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>8D49B89B-55D6-EC30-21DA-70EA70183F84</newElementsIDs>
 <usedAttributes>
 <attributeRef>8D49B89B-55D6-EC30-21DA-70EA70183F84</attributeRef>
 </usedAttributes>

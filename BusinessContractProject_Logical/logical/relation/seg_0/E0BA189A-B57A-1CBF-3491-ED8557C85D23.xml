@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CREO_item_cost" directorySegmentName="seg_0" id="E0BA189A-B57A-1CBF-3491-ED8557C85D23">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BCDB_item_cost" directorySegmentName="seg_0" id="E0BA189A-B57A-1CBF-3491-ED8557C85D23">
 <createdBy>pcannata</createdBy>
 <createdTime>2013-03-28 01:28:19 UTC</createdTime>
 <ownerDesignName>BusinessContractProject_Logical</ownerDesignName>
