@@ -1,0 +1,504 @@
+DROP SEQUENCE BCDB_ammendment_seq ; 
+create sequence BCDB_ammendment_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_ammendment_PK_trig 
+before insert on BCDB_ammendment
+for each row 
+begin 
+select BCDB_ammendment_seq.nextval into :new.item_id from dual; 
+end; 
+/
+alter table BCDB_ammendment add dflex date ; 
+alter table BCDB_ammendment add iflex1 integer ; 
+alter table BCDB_ammendment add iflex2 integer ; 
+alter table BCDB_ammendment add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_ammendment add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_ammendment add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_ammendment add created date ; 
+alter table BCDB_ammendment add created_by VARCHAR2 (255) ; 
+alter table BCDB_ammendment add row_version_number integer ; 
+alter table BCDB_ammendment add updated date ; 
+alter table BCDB_ammendment add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_ammendment_AUD_trig 
+before insert or update on BCDB_ammendment 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+-- Table BCDB_communication has a compound primary key so no sequence or trigger was created for it.
+DROP SEQUENCE BCDB_contract_seq ; 
+create sequence BCDB_contract_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_contract_PK_trig 
+before insert on BCDB_contract
+for each row 
+begin 
+select BCDB_contract_seq.nextval into :new.contract_id from dual; 
+end; 
+/
+alter table BCDB_contract add dflex date ; 
+alter table BCDB_contract add iflex1 integer ; 
+alter table BCDB_contract add iflex2 integer ; 
+alter table BCDB_contract add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_contract add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_contract add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_contract add created date ; 
+alter table BCDB_contract add created_by VARCHAR2 (255) ; 
+alter table BCDB_contract add row_version_number integer ; 
+alter table BCDB_contract add updated date ; 
+alter table BCDB_contract add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_contract_AUD_trig 
+before insert or update on BCDB_contract 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE BCDB_cost_seq ; 
+create sequence BCDB_cost_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_cost_PK_trig 
+before insert on BCDB_cost
+for each row 
+begin 
+select BCDB_cost_seq.nextval into :new.cost_id from dual; 
+end; 
+/
+alter table BCDB_cost add dflex date ; 
+alter table BCDB_cost add iflex1 integer ; 
+alter table BCDB_cost add iflex2 integer ; 
+alter table BCDB_cost add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_cost add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_cost add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_cost add created date ; 
+alter table BCDB_cost add created_by VARCHAR2 (255) ; 
+alter table BCDB_cost add row_version_number integer ; 
+alter table BCDB_cost add updated date ; 
+alter table BCDB_cost add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_cost_AUD_trig 
+before insert or update on BCDB_cost 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE BCDB_document_seq ; 
+create sequence BCDB_document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_document_PK_trig 
+before insert on BCDB_document
+for each row 
+begin 
+select BCDB_document_seq.nextval into :new.id from dual; 
+end; 
+/
+alter table BCDB_document add dflex date ; 
+alter table BCDB_document add iflex1 integer ; 
+alter table BCDB_document add iflex2 integer ; 
+alter table BCDB_document add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_document add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_document add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_document add created date ; 
+alter table BCDB_document add created_by VARCHAR2 (255) ; 
+alter table BCDB_document add row_version_number integer ; 
+alter table BCDB_document add updated date ; 
+alter table BCDB_document add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_document_AUD_trig 
+before insert or update on BCDB_document 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE BCDB_escalation_seq ; 
+create sequence BCDB_escalation_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_escalation_PK_trig 
+before insert on BCDB_escalation
+for each row 
+begin 
+select BCDB_escalation_seq.nextval into :new.escalation_id from dual; 
+end; 
+/
+alter table BCDB_escalation add dflex date ; 
+alter table BCDB_escalation add iflex1 integer ; 
+alter table BCDB_escalation add iflex2 integer ; 
+alter table BCDB_escalation add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_escalation add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_escalation add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_escalation add created date ; 
+alter table BCDB_escalation add created_by VARCHAR2 (255) ; 
+alter table BCDB_escalation add row_version_number integer ; 
+alter table BCDB_escalation add updated date ; 
+alter table BCDB_escalation add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_escalation_AUD_trig 
+before insert or update on BCDB_escalation 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE BCDB_facility_seq ; 
+create sequence BCDB_facility_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_facility_PK_trig 
+before insert on BCDB_facility
+for each row 
+begin 
+select BCDB_facility_seq.nextval into :new.facility_id from dual; 
+end; 
+/
+alter table BCDB_facility add dflex date ; 
+alter table BCDB_facility add iflex1 integer ; 
+alter table BCDB_facility add iflex2 integer ; 
+alter table BCDB_facility add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_facility add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_facility add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_facility add created date ; 
+alter table BCDB_facility add created_by VARCHAR2 (255) ; 
+alter table BCDB_facility add row_version_number integer ; 
+alter table BCDB_facility add updated date ; 
+alter table BCDB_facility add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_facility_AUD_trig 
+before insert or update on BCDB_facility 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+-- Table BCDB_item_esc has a compound primary key so no sequence or trigger was created for it.
+DROP SEQUENCE BCDB_link_seq ; 
+create sequence BCDB_link_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_link_PK_trig 
+before insert on BCDB_link
+for each row 
+begin 
+select BCDB_link_seq.nextval into :new.link_id from dual; 
+end; 
+/
+alter table BCDB_link add dflex date ; 
+alter table BCDB_link add iflex1 integer ; 
+alter table BCDB_link add iflex2 integer ; 
+alter table BCDB_link add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_link add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_link add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_link add created date ; 
+alter table BCDB_link add created_by VARCHAR2 (255) ; 
+alter table BCDB_link add row_version_number integer ; 
+alter table BCDB_link add updated date ; 
+alter table BCDB_link add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_link_AUD_trig 
+before insert or update on BCDB_link 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE BCDB_organization_seq ; 
+create sequence BCDB_organization_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_organization_PK_trig 
+before insert on BCDB_organization
+for each row 
+begin 
+select BCDB_organization_seq.nextval into :new.organization_id from dual; 
+end; 
+/
+alter table BCDB_organization add dflex date ; 
+alter table BCDB_organization add iflex1 integer ; 
+alter table BCDB_organization add iflex2 integer ; 
+alter table BCDB_organization add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_organization add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_organization add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_organization add created date ; 
+alter table BCDB_organization add created_by VARCHAR2 (255) ; 
+alter table BCDB_organization add row_version_number integer ; 
+alter table BCDB_organization add updated date ; 
+alter table BCDB_organization add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_organization_AUD_trig 
+before insert or update on BCDB_organization 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE BCDB_party_seq ; 
+create sequence BCDB_party_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_party_PK_trig 
+before insert on BCDB_party
+for each row 
+begin 
+select BCDB_party_seq.nextval into :new.party_id from dual; 
+end; 
+/
+alter table BCDB_party add dflex date ; 
+alter table BCDB_party add iflex1 integer ; 
+alter table BCDB_party add iflex2 integer ; 
+alter table BCDB_party add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_party add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_party add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_party add created date ; 
+alter table BCDB_party add created_by VARCHAR2 (255) ; 
+alter table BCDB_party add row_version_number integer ; 
+alter table BCDB_party add updated date ; 
+alter table BCDB_party add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_party_AUD_trig 
+before insert or update on BCDB_party 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE BCDB_payment_seq ; 
+create sequence BCDB_payment_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger BCDB_payment_PK_trig 
+before insert on BCDB_payment
+for each row 
+begin 
+select BCDB_payment_seq.nextval into :new.payment_id from dual; 
+end; 
+/
+alter table BCDB_payment add dflex date ; 
+alter table BCDB_payment add iflex1 integer ; 
+alter table BCDB_payment add iflex2 integer ; 
+alter table BCDB_payment add vflex1 VARCHAR2 (4000) ; 
+alter table BCDB_payment add vflex2 VARCHAR2 (4000) ; 
+alter table BCDB_payment add vflex3 VARCHAR2 (4000) ; 
+alter table BCDB_payment add created date ; 
+alter table BCDB_payment add created_by VARCHAR2 (255) ; 
+alter table BCDB_payment add row_version_number integer ; 
+alter table BCDB_payment add updated date ; 
+alter table BCDB_payment add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger BCDB_payment_AUD_trig 
+before insert or update on BCDB_payment 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP INDEX party_id_FK_0 ;
+CREATE INDEX party_id_FK_0 ON BCDB_communication(party_id) ;
+DROP INDEX contract_id_FK_1 ;
+CREATE INDEX contract_id_FK_1 ON BCDB_cost(contract_id) ;
+DROP INDEX contract_id_FK_2 ;
+CREATE INDEX contract_id_FK_2 ON BCDB_facility(contract_id) ;
+DROP INDEX item_id_FK_3 ;
+CREATE INDEX item_id_FK_3 ON BCDB_facility(item_id) ;
+DROP INDEX organization_id_FK_4 ;
+CREATE INDEX organization_id_FK_4 ON BCDB_party(organization_id) ;
+DROP INDEX department_id_FK_5 ;
+CREATE INDEX department_id_FK_5 ON BCDB_contract(department_id) ;
+DROP INDEX vendor_id_FK_6 ;
+CREATE INDEX vendor_id_FK_6 ON BCDB_contract(vendor_id) ;
+DROP INDEX party_dept_contact_id_FK_7 ;
+CREATE INDEX party_dept_contact_id_FK_7 ON BCDB_contract(party_dept_contact_id) ;
+DROP INDEX party_id_FK_8 ;
+CREATE INDEX party_id_FK_8 ON BCDB_document(party_id) ;
+DROP INDEX party_id_FK_9 ;
+CREATE INDEX party_id_FK_9 ON BCDB_link(party_id) ;
+DROP INDEX party_id_FK_10 ;
+CREATE INDEX party_id_FK_10 ON BCDB_cost(party_id) ;
+DROP INDEX escalation_id_FK_11 ;
+CREATE INDEX escalation_id_FK_11 ON BCDB_item_esc(escalation_id) ;
+DROP INDEX contract_id_FK_12 ;
+CREATE INDEX contract_id_FK_12 ON BCDB_document(contract_id) ;
+DROP INDEX ammendment_id_FK_13 ;
+CREATE INDEX ammendment_id_FK_13 ON BCDB_item_esc(ammendment_id) ;
+DROP INDEX party_id1_FK_14 ;
+CREATE INDEX party_id1_FK_14 ON BCDB_party(party_id1) ;
+DROP INDEX party_dept_contract_ad_FK_15 ;
+CREATE INDEX party_dept_contract_ad_FK_15 ON BCDB_contract(party_dept_contract_admin_id) ;
+DROP INDEX party_id_FK_16 ;
+CREATE INDEX party_id_FK_16 ON BCDB_payment(party_id) ;
+DROP INDEX contract_id_FK_17 ;
+CREATE INDEX contract_id_FK_17 ON BCDB_link(contract_id) ;
+DROP INDEX ammendment_id_FK_18 ;
+CREATE INDEX ammendment_id_FK_18 ON BCDB_payment(ammendment_id) ;
+DROP INDEX ammendment_id_FK_19 ;
+CREATE INDEX ammendment_id_FK_19 ON BCDB_cost(ammendment_id) ;
+DROP INDEX contract_id_FK_20 ;
+CREATE INDEX contract_id_FK_20 ON BCDB_ammendment(contract_id) ;
